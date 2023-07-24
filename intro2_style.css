@@ -1,0 +1,826 @@
+body{
+    background-color: var(--rosa_antico);
+}
+
+.principale {
+    min-height: 70vh;
+    padding: 0.5em;
+    margin: auto;
+    /* max-width: 1100px; */
+    }
+
+section h1{
+    font-family: Real Stone;
+    font-size: 30px;
+    color: var(--arancione);
+    text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
+}
+h2{
+    font-family: Real Stone;
+    font-size: 30px;
+    color: var(--rosa_antico);
+    text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
+}
+
+
+    
+    /* ravioli */
+
+    .info-container p{ 
+            font-family:Alibaba Sans;
+            font-size: 20px;
+            font-weight: bolder;
+            color: var(--ciliegio);
+    }
+    .page-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+    .content-wrapper {
+        display: flex;
+        position: relative;
+        
+    }
+    
+    input {
+        display: none;
+    }
+
+    #section-1, #section-2 {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        width: 50vw;
+        min-height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+    }
+    
+    #section-1 {
+        margin: 0 !important;
+        opacity: 1;
+        z-index: 5;
+        transition: transform 0.7s, opacity 0.5s;
+    }
+    
+    #section-2 {
+        margin: 0 !important;
+        opacity: 0;
+        transition: transform 0.7s, opacity 0.5s;
+        
+    }
+    
+    .image-container {
+        width: 50%;
+        height: 100%;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+        
+    }
+    
+    .info-container {
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(rgba(255,160,122,0.7), rgba(255,160,122,0.7)), url(/img/fiori.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #section-1 .image-container{
+        height: 60vh;
+        }
+
+    #section-2 .image-container{
+        height: 60vh;
+    }
+
+    #section-1 .info-container{
+        height: 60vh;
+    }
+    #section-2 .info-container{
+        height: 60vh;
+        }
+    
+    #section-2 .image-container {
+        opacity: 0;
+        transform: translateY(2em);
+        transition: all 1s 0.7s;
+        
+        
+
+    }
+    #section-2 .info-container {
+        opacity: 0;
+        transform: translateY(-2em);
+        transition: all 1s 0.7s;
+        
+        
+    }
+    
+    label {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: solid 2px black;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px transparent;
+    box-shadow: 2px 2px 4px 2px black;
+    border-radius: 100%;
+    background-image: url(./img/iconacibo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .toggle{
+        border: solid 2px transparent;
+    }
+    
+    #toggle2:checked ~ #section-2 {
+        opacity: 1;
+    }
+    
+    #toggle2:checked ~ #section-1 {
+        opacity: 0;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
+    
+    #toggle2:checked ~ #section-2 .image-container,
+    #toggle2:checked ~ #section-2 .info-container {
+        opacity: 1;
+        transform: translateY(0);
+       
+    }
+    
+    #toggle3:checked ~ #section-1 {
+        transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    }
+    
+    #toggle3:checked ~ #section-2 .image-container,
+    #toggle3:checked ~ #section-2 .info-container {
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    /* fine ravioli */
+
+    /* pane */
+.info-container2 p{ 
+        font-family:Alibaba Sans;
+        font-size: 20px;
+        color: var(--ciliegio);
+        font-weight: bolder;
+    }
+
+    .princi{
+        margin-left: 300px ;
+    }
+
+.page-wrapper2 {
+    display: flex;
+    justify-content: start;
+   
+}
+
+.content-wrapper2 {
+    
+    display: flex;
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+#section-3, #section-4 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 50vw;
+    min-height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);
+
+}
+
+#section-3 .image-container2{
+    height: 70vh;
+    }
+
+#section-4 .image-container2{
+    height: 70vh;
+}
+
+#section-3 .info-container2{
+    height: 70vh;
+}
+#section-4 .info-container2{
+    height: 70vh;
+    }
+
+#section-3 {
+    margin: 0 !important;
+    opacity: 1;
+    z-index: 5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#section-4 {
+    margin: 0 !important;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-container2 {
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.due {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+.info-container2 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,160,122,0.7), rgba(255,160,122,0.7)), url(/img/fiori.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4 .image-container2 {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all 1s 0.7s;
+}
+#section-4 .info-container2 {
+    opacity: 0;
+    transform: translateY(-2em);
+    transition: all 1s 0.7s;
+}
+
+.toggleB {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: solid 2px black;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px transparent;
+    box-shadow: 2px 2px 4px 2px black;
+    border-radius: 100%;
+    background-image: url(./img/iconacibo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#toggle5:checked ~ #section-4 {
+    opacity: 1;
+}
+
+#toggle5:checked ~ #section-3 {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+#toggle5:checked ~ #section-4 .image-container2,
+#toggle5:checked ~ #section-4 .info-container2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#toggle6:checked ~ #section-3 {
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+}
+
+#toggle6:checked ~ #section-4 .image-container2,
+#toggle6:checked ~ #section-4 .info-container2 {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* fine pane */
+
+    /* dolci */
+    .info-container3 p{ 
+        font-family:Alibaba Sans;
+        font-size: 20px;
+        color: var(--ciliegio);
+        font-weight: bolder;
+    }
+
+    #section-5 .image-container3{
+        height:70vh;
+        
+    }
+
+    #section-6 .image-container3{
+        height:70vh;
+       
+    }
+
+    #section-5 .info-container3{
+        height:70vh;
+    
+    }
+    #section-6 .info-container3{
+        height:70vh;
+        
+    }
+
+.page-wrapper3 {
+    display: flex;
+    justify-content: start;
+    
+}
+
+.content-wrapper3 {
+    
+    display: flex;
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+#section-5, #section-6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 50vw;
+    min-height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);
+}
+
+#section-5 {
+    margin: 0 !important;
+    opacity: 1;
+    z-index: 5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#section-6 {
+    margin: 0 !important;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-container3 {
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.due {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+.info-container3 {
+    width: 50%;
+    height: 100%;
+    /* background-color: lightsalmon; */
+    background-image: linear-gradient(rgba(255,160,122,0.7), rgba(255,160,122,0.7)), url(/img/fiori.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-6 .image-container3 {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all 1s 0.7s;
+}
+#section-6 .info-container3 {
+    opacity: 0;
+    transform: translateY(-2em);
+    transition: all 1s 0.7s;
+}
+
+.toggleC {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: solid 2px black;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px transparent;
+    box-shadow: 2px 2px 4px 2px black;
+    border-radius: 100%;
+    background-image: url(./img/iconacibo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#toggle8:checked ~ #section-6 {
+    opacity: 1;
+}
+
+#toggle8:checked ~ #section-5 {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+#toggle8:checked ~ #section-6 .image-container3,
+#toggle8:checked ~ #section-6 .info-container3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#toggle9:checked ~ #section-5 {
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+}
+
+#toggle9:checked ~ #section-6 .image-container3,
+#toggle9:checked ~ #section-6 .info-container3 {
+    transition: transform 0.5s, opacity 0.5s;
+}
+/* fine dolci */
+
+/* vini */
+.info-container4 p{ 
+    font-family:Alibaba Sans;
+    font-size: 20px;
+    color: var(--ciliegio);
+    font-weight: bolder;
+}
+
+#section-7 .image-container4{
+    height: 70vh;
+    
+}
+
+#section-8 .image-container4{
+    height: 70vh;
+   
+}
+
+#section-7 .info-container4{
+    height: 70vh;
+
+}
+#section-8 .info-container4{
+    height: 70vh;
+    
+}
+.page-wrapper4 {
+display: flex;
+justify-content: start;
+}
+
+.content-wrapper4 {
+
+display: flex;
+position: relative;
+}
+
+input {
+display: none;
+}
+
+#section-7, #section-8 {
+    padding: 0 !important;
+margin: 0 !important;
+display: flex;
+width: 50vw;
+min-height: 50%;
+position: absolute;
+top: 0;
+left: 0;
+box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);
+}
+
+#section-7 {
+margin: 0 !important;
+opacity: 1;
+z-index: 5;
+transition: transform 0.5s, opacity 0.5s;
+}
+
+#section-8 {
+margin: 0 !important;
+opacity: 0;
+transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-container4 {
+width: 50%;
+height: 100%;
+background-color: lightblue;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.due {
+flex-shrink: 0;
+min-width: 100%;
+min-height: 100%;
+
+}
+
+.info-container4 {
+width: 50%;
+height: 100%;
+/* background-color: lightsalmon; */
+background-image: linear-gradient(rgba(255,160,122,0.7), rgba(255,160,122,0.7)), url(/img/fiori.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#section-8 .image-container4 {
+opacity: 0;
+transform: translateY(2em);
+transition: all 1s 0.7s;
+}
+#section-8 .info-container4 {
+opacity: 0;
+transform: translateY(-2em);
+transition: all 1s 0.7s;
+}
+
+.toggleD {
+    height: 80px;
+    width: 80px;
+    display: block;
+    border: solid 2px black;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px transparent;
+    box-shadow: 2px 2px 4px 2px black;
+    border-radius: 100%;
+    background-image: url(./img/iconacibo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#toggle11:checked ~ #section-8 {
+opacity: 1;
+}
+
+#toggle11:checked ~ #section-7 {
+opacity: 0;
+transform: scale(0.95);
+pointer-events: none;
+}
+
+#toggle11:checked ~ #section-8 .image-container4,
+#toggle11:checked ~ #section-8 .info-container4 {
+opacity: 1;
+transform: translateY(0);
+}
+
+#toggle12:checked ~ #section-7 {
+transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+}
+
+#toggle12:checked ~ #section-8 .image-container4,
+#toggle12:checked ~ #section-8 .info-container4 {
+transition: transform 0.5s, opacity 0.5s;
+}
+/* fine vini */
+
+@media screen and (max-width: 850px){
+    
+   
+    
+    .principale{
+    margin-left: 0 !important;
+}
+    section h1{
+        font-family: Real Stone;
+        font-size: 30px;
+        color: var(--arancione);
+        text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
+    }
+    h2{
+        font-family: Real Stone;
+        font-size: 30px;
+        color: var(--rosa_antico);
+        text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
+    }
+    .info-container p{ 
+        font-family:Alibaba Sans;
+        font-size: 20px;
+        font-weight: bolder;
+        color: var(--ciliegio);
+}
+
+.info-container2 p{ 
+    font-family:Alibaba Sans;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+.info-container3 p{ 
+    font-family:Alibaba Sans;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+.info-container4 p{ 
+    font-family:Alibaba Sans;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+
+
+#section-1, #section-2 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 95vw;
+    min-height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+#section-3, #section-4 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 97vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+#section-5, #section-6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 97vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+#section-7, #section-8 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 97vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+    
+}
+
+@media screen and (max-width: 480px){
+
+ 
+    .principale{
+    margin-left: 0 !important;
+}
+    section h1{
+        font-family: Real Stone;
+        font-size: 15px;
+        color: var(--arancione);
+        text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
+    }
+    h2{
+        font-family: Real Stone;
+        font-size: 15px;
+        color: var(--rosa_antico);
+        text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
+    }
+    .info-container p{ 
+        font-family:Alibaba Sans;
+        font-size: 10px;
+        font-weight: bolder;
+        color: var(--ciliegio);
+}
+
+.info-container2 p{ 
+    font-family:Alibaba Sans;
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+.info-container3 p{ 
+    font-family:Alibaba Sans;
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+.info-container4 p{ 
+    font-family:Alibaba Sans;
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--ciliegio);
+}
+
+
+#section-1, #section-2 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 95vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+#section-3, #section-4 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 95vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+#section-5, #section-6 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 95vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+#section-7, #section-8 {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 95vw;
+    min-height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
+}
+
+    
+}
+
+  
+
+
+
