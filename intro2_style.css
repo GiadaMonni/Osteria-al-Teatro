@@ -10,13 +10,13 @@ body{
     }
 
 section h1{
-    font-family: Real Stone;
+    font-family: Lobster Two;
     font-size: 30px;
     color: var(--arancione);
     text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
 }
 h2{
-    font-family: Real Stone;
+    font-family: Lobster Two;
     font-size: 30px;
     color: var(--rosa_antico);
     text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
@@ -27,7 +27,7 @@ h2{
     /* ravioli */
 
     .info-container p{ 
-            font-family:Alibaba Sans;
+            font-family: Comic Sans MS;
             font-size: 20px;
             font-weight: bolder;
             color: var(--ciliegio);
@@ -132,23 +132,22 @@ h2{
     }
     
     label {
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 90px;
     display: block;
-    border: solid 2px black;
-    padding: 1em 2em;
-    border-radius: 5px;
+    text-align: center;
+    padding-top: 3px;
     cursor: pointer;
     border: solid 2px transparent;
-    box-shadow: 2px 2px 4px 2px black;
-    border-radius: 100%;
-    background-image: url(./img/iconacibo.png);
-    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px 2px var(--ciliegio);
+    border-radius: 30px;
+    color: var(--ciliegio);
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, var(--arancione), yellow);
     background-size: cover;
     }
-    .toggle{
-        border: solid 2px transparent;
-    }
+
     
     #toggle2:checked ~ #section-2 {
         opacity: 1;

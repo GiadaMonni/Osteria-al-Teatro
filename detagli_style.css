@@ -14,7 +14,7 @@
     }
 
     p{
-      font-family:Alibaba Sans;
+      font-family: Comic Sans MS;
             font-size: 20px;
             font-weight: bolder;
             color: var(--ciliegio);
@@ -47,9 +47,9 @@
     }
 
     .carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    /* position: absolute; */
+     width: 100%;
+    height: 100%; 
     transform-style: preserve-3d; 
     animation: rotate360 60s infinite forwards linear;
     }
@@ -64,11 +64,6 @@
       box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
       display: flex;
       }
-
-    span {
-    margin: auto;
-    font-size: 2rem;
-    }
 
     .carousel__face:nth-child(1) {
       background-image: url("./media/piatti2.jpg");
@@ -127,10 +122,6 @@
     display: flex;
     }
 
-  span {
-  margin: auto;
-  font-size: 2rem;
-  }
   .carousel__face2:nth-child(1) {
   background-image: url("./media/esterni2.jpg");
   transform: rotateY(  0deg) translateZ(430px); }
@@ -210,8 +201,9 @@
   background-image: url("./image/sala4.jpg");
   transform: rotateY(280deg) translateZ(430px); }
   .carousel__face3:nth-child(9) {
-  background-image: url("./image/sala9.jpg");
-  transform: rotateY(320deg) translateZ(430px); }
+    background-image: url("./image/sala9.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  
 /* fine dettaglio3 */
 
 /* dettaglio 4 */
@@ -241,10 +233,7 @@
   display: flex;
   }
 
-  span {
-  margin: auto;
-  font-size: 2rem;
-  }
+ 
   .carousel__face4:nth-child(1) {
   background-image: url("./image/sportego1.jpg");
   transform: rotateY(  0deg) translateZ(430px); }
@@ -419,6 +408,7 @@
       border: 1px solid var(--arancione);
       border-radius: 12px;
       transition: all 0.3s ease-in-out;
+     
     }
     
     button::before {
@@ -436,7 +426,7 @@
     }
     
     button::after {
-      content: " Torna Home";
+      content: "Home";
       position: absolute;
       top: 50%;
       left: 50%;
@@ -477,7 +467,112 @@
     }
     /* fine bottone */
 
-    @media screen and (max-width: 480px){}
+    @media screen and (max-width: 480px){
+     .carosell{
+        width: 50%;
+      }
+      .container{
+        position: relative;
+        width: 120px;
+        margin: 30px auto 0 auto;
+        perspective: 3000px;
+        }
+
+        .hover {
+          width: 15px;
+          height: 15px;
+        }
+
+        .carousel__face:not(:first-child) {
+          margin-top: 5px; /* Puoi personalizzare questo valore in base alle tue esigenze */
+        }
+
+        .carousel__face {
+          transform: rotateY( calc(40deg * (var(--index) - 1)) ) translateZ(430px);
+        }
+
+        .container2{
+          position: relative;
+          width: 120px;
+          margin: 30px auto 0 auto;
+          perspective: 1000px;
+          }
+
+          .container3{
+            position: relative;
+            width: 120px;
+            margin: 30px auto 0 auto;
+            perspective: 1000px;
+            }
+
+            .container4{
+              position: relative;
+              width: 120px;
+              margin: 30px auto 0 auto;
+              perspective: 1000px;
+              }
+
+        .carousel__face { 
+          position: absolute;
+          width: 180px;
+          height: 135px;
+          top: 10px;
+          left: 5px;
+          right: 5px;
+          background-size: cover;
+          box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+          display: flex;
+          }
+
+          .carousel__face2 { 
+            position: absolute;
+            width: 210px;
+            height: 120px;
+            top: 10px;
+            left: 5px;
+            right: 5px;
+            background-size: cover;
+            box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+            display: flex;
+            }
+
+            .carousel__face3 { 
+              position: absolute;
+              width: 210px;
+              height: 120px;
+              top: 10px;
+              left: 5px;
+              right: 5px;
+              background-size: cover;
+              box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+              display: flex;
+              }
+
+              .carousel__face4 { 
+                position: absolute;
+                width: 210px;
+                height: 120px;
+                top: 10px;
+                left: 5px;
+                right: 5px;
+                background-size: cover;
+                box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+                display: flex;
+                }
+
+          footer{
+            height: 250px;
+            background-color: var(--ciliegio);
+            color: var(--rosa_antico);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+          }
+          
+        }
+      
+    
 
     /* footer */
    

@@ -10,22 +10,28 @@
     }
 
     li{
-      font-family:Alibaba Sans;
+      font-family: Comic Sans MS;
       font-size: 20px;
       color: var(--ciliegio);
       font-weight: bold;
      list-style-type: none;
     }
 
+    .visual{
+      color: var(--ciliegio);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
 h4 {
-    font-family:Alibaba Sans;
+    font-family:Comic Sans MS;
     font-size: 35px;
     color: var(--ciliegio);
     font-weight: bold;
 }
-h5 {
-    font-family:Alibaba Sans;
-    font-size: 25px;
+.passione {
+    font-family:Comic Sans MS;
+    /* font-size: 25px; */
     color: var(--rosa_antico);
     font-weight: bold;
 }
@@ -64,7 +70,7 @@ h5 {
     top: 0;
     }
 .title_wrapper p{
-  font-family:Alibaba Sans;
+  font-family: Comic Sans MS;
   font-size: 20px;
   color: var(--ciliegio);
   font-weight: bold;
@@ -88,17 +94,17 @@ h5 {
     font-size: 70px;
     /* text-transform: uppercase; */
     text-align: center;
-    font-family: Seagram tfb, serif;
+    font-family:Cloister Black;
     font-weight: 900;
     transition: 2.5s;
     
     }
     .title_wrapper h1:hover {
       text-align: center;
-      font-size: 124px;
+      font-size: 95px;
       /* text-transform: uppercase; */
       text-align: center;
-      font-family: Seagram tfb, serif;
+      font-family: Cloister Black;
       font-weight: 900;
       
       }
@@ -221,7 +227,26 @@ width: 250px;
   }
 
   @media screen and (max-width: 480px){
+    .title_wrapper h1:hover {
+      text-align: center;
+      font-size: 70px;
+      /* text-transform: uppercase; */
+      text-align: center;
+      font-family: Cloister Black;
+      font-weight: 900;
+      
+      }
 
+      .title_wrapper h1 {
+        text-align: center;
+        font-size: 40px;
+        /* text-transform: uppercase; */
+        text-align: center;
+        font-family:Cloister Black;
+        font-weight: 900;
+        transition: 2.5s;
+        
+        }
   }
 
   @media screen and (max-width: 850px){
