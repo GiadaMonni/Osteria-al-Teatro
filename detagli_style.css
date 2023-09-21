@@ -20,10 +20,10 @@
             color: var(--ciliegio);
     }
 
-    /* .detta{
+    .detta{
       position: relative;
       left: -45px;
-    } */
+    }
     .over:hover{
       font-size: 70px;
     }
@@ -67,8 +67,6 @@
       display: flex;
       }
 
-<<<<<<< HEAD
-=======
 
 
     span {
@@ -76,7 +74,6 @@
     font-size: 2rem;
     }
 
->>>>>>> dc281bd6e9512047f5364f29bbb8234be6078564
     .carousel__face:nth-child(1) {
       background-image: url("./media/piatti2.jpg");
       transform: rotateY(  0deg) translateZ(430px); }
