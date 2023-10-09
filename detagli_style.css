@@ -7,10 +7,11 @@
 
     body{
         background-color: var(--rosa_antico);
+
     }
 
     .carosell{
-      height: 65vh;
+      height: 40vh;
     }
 
     p{
@@ -20,10 +21,10 @@
             color: var(--ciliegio);
     }
 
-    .detta{
+    /* .detta{
       position: relative;
       left: -45px;
-    }
+    } */
     .over:hover{
       font-size: 70px;
     }
@@ -33,6 +34,8 @@
       font-family: Seagram tfb, serif;
       color: var(--ciliegio);
       text-shadow: 2px 2px 2px 2px #fff;
+      width: 100%;
+      
     }
     .nav2 h1{
       color: var(--ciliegio);
@@ -43,8 +46,7 @@
     position: relative;
     width: 320px;
     margin: 100px auto 0 auto;
-    /* perspective: 1000px; */
-    }
+     }
 
 
 
@@ -101,6 +103,10 @@
       .carousel__face:nth-child(9) {
       background-image: url("./media/piatti10.jpg");
       transform: rotateY(320deg) translateZ(430px); }
+
+      /* footer {
+    
+      } */
 
 
       @media screen and (max-width: 600px){
@@ -325,6 +331,7 @@
         justify-content: center;
         align-items: center;
         font-size: 50px;
+        width: 100%;
       }
 
  footer a{
@@ -345,6 +352,7 @@
     .container-fluid{
       display: flex;
       justify-content: center;
+      margin: 0;
     }
 
     .container-button {
@@ -520,7 +528,7 @@
     }
     /* fine bottone */
 
-    @media screen and (max-width: 480px){
+    /* @media screen and (max-width: 480px){
      .carosell{
         width: 50%;
       }
@@ -537,7 +545,7 @@
         }
 
         .carousel__face:not(:first-child) {
-          margin-top: 5px; /* Puoi personalizzare questo valore in base alle tue esigenze */
+          margin-top: 5px; 
         }
 
         .carousel__face {
@@ -623,7 +631,7 @@
             font-size: 35px;
           }
           
-        }
+        } */
       
     
 
