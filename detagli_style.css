@@ -1,4 +1,3 @@
-
 :root{
   --arancione: rgb(183,65,14);
   --rosa_antico:rgb(238, 220, 200);
@@ -44,7 +43,7 @@ font-family: Uncial Antiqua;
 position: relative;
 width: 320px;
 margin: 100px auto 0 auto;
-perspective: 3cqb;
+perspective: 1000px;
 }
 
 .carousel {
@@ -468,20 +467,169 @@ z-index: 2;
 }
 /* fine bottone */
 
-/* mediaquery */
-
 @media screen and (max-width: 480px){
 
-    /* dettaglio */
+  /* dettaglio */
 
 .container{
+position: relative;
+width: 120px;
+margin: 30px auto 0 auto;
+perspective: 800px;
+}
+
+.carousel__face { 
+position: absolute;
+width: 180px;
+height: 120px;
+top: 10px;
+left: 5px;
+right: 5px;
+background-size: cover;
+box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+display: flex;
+}
+
+.carousel__face:nth-child(1) {
+background-image: url("./media/piatti2.jpg");
+transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+background-image: url("./media/piatti3.jpg");
+  transform: rotateY( 24deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+background-image: url("./media/piatti4.jpg");
+transform: rotateY( 48deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+background-image: url("./media/piatti5.jpg");
+transform: rotateY(72deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+background-image: url("./media/piatti6.jpg");
+transform: rotateY(96deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+background-image: url("./media/piatti7.jpg");
+transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+background-image: url("./media/piatti8.jpg");
+transform: rotateY(144deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+background-image: url("./media/piatti9.jpg");
+transform: rotateY(168deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+background-image: url("./media/piatti10.jpg");
+transform: rotateY(192deg) translateZ(430px); }
+
+/* fine dettaglio */
+
+/* dettaglio 2 */
+
+.container2{
+position: relative;
+width: 120px;
+margin: 30px auto 0 auto;
+perspective: 1000px;
+}
+
+.carousel__face2 { 
+position: absolute;
+width: 180px;
+height: 120px;
+top: 10px;
+left: 5px;
+right: 5px;
+background-size: cover;
+box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+display: flex;
+}
+
+.carousel__face2:nth-child(1) {
+  background-image: url("./media/esterni2.jpg");
+  transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face2:nth-child(2) { 
+  background-image: url("./media/esterni3.jpg");
+  transform: rotateY( 24deg) translateZ(430px); }
+  .carousel__face2:nth-child(3) {
+  background-image: url("./media/esterni4.jpg");
+  transform: rotateY( 48deg) translateZ(430px); }
+  .carousel__face2:nth-child(4) {
+  background-image: url("./media/esterni8.jpg");
+  transform: rotateY(72deg) translateZ(430px); }
+  .carousel__face2:nth-child(5) { 
+  background-image: url("./media/esterni9.jpg");
+  transform: rotateY(96deg) translateZ(430px); }
+  .carousel__face2:nth-child(6) { 
+  background-image: url("./media/esterni7.jpg");
+  transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face2:nth-child(7) { 
+  background-image: url("./media/esterni5.jpg");
+  transform: rotateY(144deg) translateZ(430px); }
+  .carousel__face2:nth-child(8) {
+  background-image: url("./media/esterni6.jpg");
+  transform: rotateY(168deg) translateZ(430px); }
+  .carousel__face2:nth-child(9) {
+  background-image: url("./media/esterni1.jpg");
+  transform: rotateY(192deg) translateZ(430px); }
+
+  /* fine dettaglio 2 */
+
+  /* dettaglio 3 */
+
+.container3{
+position: relative;
+width: 120px;
+margin: 30px auto 0 auto;
+perspective: 800px;
+} 
+
+.carousel__face3 { 
+  position: absolute;
+  width: 180px;
+  height: 120px;
+  top: 10px;
+  left: 5px;
+  right: 5px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
+  display: flex;
+  }
+
+  .carousel__face3:nth-child(1) {
+    background-image: url("./image/sala5.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+    .carousel__face3:nth-child(2) { 
+    background-image: url("./image/sala1.jpg");
+    transform: rotateY( 24deg) translateZ(430px); }
+    .carousel__face3:nth-child(3) {
+    background-image: url("./image/sala2.jpg");
+    transform: rotateY( 48deg) translateZ(430px); }
+    .carousel__face3:nth-child(4) {
+    background-image: url("./image/sala3.jpg");
+    transform: rotateY(72deg) translateZ(430px); }
+    .carousel__face3:nth-child(5) { 
+    background-image: url("./image/sala6.jpg");
+    transform: rotateY(96deg) translateZ(430px); }
+    .carousel__face3:nth-child(6) { 
+    background-image: url("./image/sala7.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+    .carousel__face3:nth-child(7) { 
+    background-image: url("./image/sala8.jpg");
+    transform: rotateY(144deg) translateZ(430px); }
+    .carousel__face3:nth-child(8) {
+    background-image: url("./image/sala4.jpg");
+    transform: rotateY(168deg) translateZ(430px); }
+    .carousel__face3:nth-child(9) {
+    background-image: url("./image/sala9.jpg");
+    transform: rotateY(192deg) translateZ(430px); }
+
+    /* fine dettaglio 3 */
+
+.container4{
   position: relative;
   width: 120px;
   margin: 30px auto 0 auto;
   perspective: 800px;
   }
 
-.carousel__face { 
+.carousel__face4 { 
     position: absolute;
     width: 180px;
     height: 120px;
@@ -493,185 +641,34 @@ z-index: 2;
     display: flex;
     }
 
-  .carousel__face:nth-child(1) {
-    background-image: url("./media/piatti2.jpg");
-    transform: rotateY(  0deg) translateZ(430px); }
-    .carousel__face:nth-child(2) { 
-    background-image: url("./media/piatti3.jpg");
-        transform: rotateY( 24deg) translateZ(430px); }
-    .carousel__face:nth-child(3) {
-    background-image: url("./media/piatti4.jpg");
-    transform: rotateY( 48deg) translateZ(430px); }
-    .carousel__face:nth-child(4) {
-    background-image: url("./media/piatti5.jpg");
-    transform: rotateY(72deg) translateZ(430px); }
-    .carousel__face:nth-child(5) { 
-    background-image: url("./media/piatti6.jpg");
-    transform: rotateY(96deg) translateZ(430px); }
-    .carousel__face:nth-child(6) { 
-    background-image: url("./media/piatti7.jpg");
-    transform: rotateY(120deg) translateZ(430px); }
-    .carousel__face:nth-child(7) { 
-    background-image: url("./media/piatti8.jpg");
-    transform: rotateY(144deg) translateZ(430px); }
-    .carousel__face:nth-child(8) {
-    background-image: url("./media/piatti9.jpg");
-    transform: rotateY(168deg) translateZ(430px); }
-    .carousel__face:nth-child(9) {
-    background-image: url("./media/piatti10.jpg");
-    transform: rotateY(192deg) translateZ(430px); }
-
-    /* fine dettaglio */
-
-    /* dettaglio 2 */
-
-  .container2{
-    position: relative;
-    width: 120px;
-    margin: 30px auto 0 auto;
-    perspective: 1000px;
-    }
-
-  .carousel__face2 { 
-      position: absolute;
-      width: 180px;
-      height: 120px;
-      top: 10px;
-      left: 5px;
-      right: 5px;
-      background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
-      display: flex;
-      }
-
-      .carousel__face2:nth-child(1) {
-        background-image: url("./media/esterni2.jpg");
-        transform: rotateY(  0deg) translateZ(430px); }
-        .carousel__face2:nth-child(2) { 
-        background-image: url("./media/esterni3.jpg");
-        transform: rotateY( 24deg) translateZ(430px); }
-        .carousel__face2:nth-child(3) {
-        background-image: url("./media/esterni4.jpg");
-        transform: rotateY( 48deg) translateZ(430px); }
-        .carousel__face2:nth-child(4) {
-        background-image: url("./media/esterni8.jpg");
-        transform: rotateY(72deg) translateZ(430px); }
-        .carousel__face2:nth-child(5) { 
-        background-image: url("./media/esterni9.jpg");
-        transform: rotateY(96deg) translateZ(430px); }
-        .carousel__face2:nth-child(6) { 
-        background-image: url("./media/esterni7.jpg");
-        transform: rotateY(120deg) translateZ(430px); }
-        .carousel__face2:nth-child(7) { 
-        background-image: url("./media/esterni5.jpg");
-        transform: rotateY(144deg) translateZ(430px); }
-        .carousel__face2:nth-child(8) {
-        background-image: url("./media/esterni6.jpg");
-        transform: rotateY(168deg) translateZ(430px); }
-        .carousel__face2:nth-child(9) {
-        background-image: url("./media/esterni1.jpg");
-        transform: rotateY(192deg) translateZ(430px); }
-
-        /* fine dettaglio 2 */
-
-        /* dettaglio 3 */
-
-    .container3{
-      position: relative;
-      width: 120px;
-      margin: 30px auto 0 auto;
-      perspective: 800px;
-      } 
-
-    .carousel__face3 { 
-        position: absolute;
-        width: 180px;
-        height: 120px;
-        top: 10px;
-        left: 5px;
-        right: 5px;
-        background-size: cover;
-        box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
-        display: flex;
-        }
-
-        .carousel__face3:nth-child(1) {
-          background-image: url("./image/sala5.jpg");
-          transform: rotateY(  0deg) translateZ(430px); }
-          .carousel__face3:nth-child(2) { 
-          background-image: url("./image/sala1.jpg");
-          transform: rotateY( 24deg) translateZ(430px); }
-          .carousel__face3:nth-child(3) {
-          background-image: url("./image/sala2.jpg");
-          transform: rotateY( 48deg) translateZ(430px); }
-          .carousel__face3:nth-child(4) {
-          background-image: url("./image/sala3.jpg");
-          transform: rotateY(72deg) translateZ(430px); }
-          .carousel__face3:nth-child(5) { 
-          background-image: url("./image/sala6.jpg");
-          transform: rotateY(96deg) translateZ(430px); }
-          .carousel__face3:nth-child(6) { 
-          background-image: url("./image/sala7.jpg");
-          transform: rotateY(120deg) translateZ(430px); }
-          .carousel__face3:nth-child(7) { 
-          background-image: url("./image/sala8.jpg");
-          transform: rotateY(144deg) translateZ(430px); }
-          .carousel__face3:nth-child(8) {
-          background-image: url("./image/sala4.jpg");
-          transform: rotateY(168deg) translateZ(430px); }
-          .carousel__face3:nth-child(9) {
-          background-image: url("./image/sala9.jpg");
-          transform: rotateY(192deg) translateZ(430px); }
-
-          /* fine dettaglio 3 */
-
-      .container4{
-        position: relative;
-        width: 120px;
-        margin: 30px auto 0 auto;
-        perspective: 800px;
-        }
-
-      .carousel__face4 { 
-          position: absolute;
-          width: 180px;
-          height: 120px;
-          top: 10px;
-          left: 5px;
-          right: 5px;
-          background-size: cover;
-          box-shadow:inset 0 0 0 2000px rgba(250, 248, 248, 0.0);
-          display: flex;
-          }
-
-          .carousel__face4:nth-child(1) {
-            background-image: url("./image/sportego1.jpg");
-            transform: rotateY(  0deg) translateZ(430px); }
-            .carousel__face4:nth-child(2) { 
-            background-image: url("./image/sportego2.jpg");
-            transform: rotateY( 24deg) translateZ(430px); }
-            .carousel__face4:nth-child(3) {
-            background-image: url("./image/sportego3.jpg");
-            transform: rotateY( 48deg) translateZ(430px); }
-            .carousel__face4:nth-child(4) {
-            background-image: url("./image/sportego4.jpg");
-            transform: rotateY(72deg) translateZ(430px); }
-            .carousel__face4:nth-child(5) { 
-            background-image: url("./image/sportego5.jpg");
-            transform: rotateY(96deg) translateZ(430px); }
-            .carousel__face4:nth-child(6) { 
-            background-image: url("./image/sportego6.jpg");
-            transform: rotateY(120deg) translateZ(430px); }
-            .carousel__face4:nth-child(7) { 
-            background-image: url("./image/sportego7.jpg");
-            transform: rotateY(144deg) translateZ(430px); }
-            .carousel__face4:nth-child(8) {
-            background-image: url("./image/sportego8.jpg");
-            transform: rotateY(168deg) translateZ(430px); }
-            .carousel__face4:nth-child(9) {
-            background-image: url("./image/sportego9.jpg");
-            transform: rotateY(192deg) translateZ(430px); }
-
+    .carousel__face4:nth-child(1) {
+      background-image: url("./image/sportego1.jpg");
+      transform: rotateY(  0deg) translateZ(430px); }
+      .carousel__face4:nth-child(2) { 
+      background-image: url("./image/sportego2.jpg");
+      transform: rotateY( 24deg) translateZ(430px); }
+      .carousel__face4:nth-child(3) {
+      background-image: url("./image/sportego3.jpg");
+      transform: rotateY( 48deg) translateZ(430px); }
+      .carousel__face4:nth-child(4) {
+      background-image: url("./image/sportego4.jpg");
+      transform: rotateY(72deg) translateZ(430px); }
+      .carousel__face4:nth-child(5) { 
+      background-image: url("./image/sportego5.jpg");
+      transform: rotateY(96deg) translateZ(430px); }
+      .carousel__face4:nth-child(6) { 
+      background-image: url("./image/sportego6.jpg");
+      transform: rotateY(120deg) translateZ(430px); }
+      .carousel__face4:nth-child(7) { 
+      background-image: url("./image/sportego7.jpg");
+      transform: rotateY(144deg) translateZ(430px); }
+      .carousel__face4:nth-child(8) {
+      background-image: url("./image/sportego8.jpg");
+      transform: rotateY(168deg) translateZ(430px); }
+      .carousel__face4:nth-child(9) {
+      background-image: url("./image/sportego9.jpg");
+      transform: rotateY(192deg) translateZ(430px); }
+                /* fine dettaglio 4 */
     footer{
       height: 250px;
       background-color: var(--ciliegio);

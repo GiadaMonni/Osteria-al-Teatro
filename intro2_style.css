@@ -147,7 +147,7 @@ h2{
     background-image: linear-gradient(to bottom, var(--arancione), yellow);
     background-size: cover;
     }
-
+    
     
     #toggle2:checked ~ #section-2 {
         opacity: 1;
@@ -178,7 +178,7 @@ h2{
 
     /* pane */
 .info-container2 p{ 
-        font-family:Alibaba Sans;
+        font-family:Comic Sans MS;
         font-size: 20px;
         color: var(--ciliegio);
         font-weight: bolder;
@@ -286,18 +286,19 @@ input {
 }
 
 .toggleB {
-    height: 80px;
-    width: 80px;
+   height: 40px;
+    width: 90px;
     display: block;
-    border: solid 2px black;
-    padding: 1em 2em;
-    border-radius: 5px;
+    text-align: center;
+    padding-top: 3px;
     cursor: pointer;
     border: solid 2px transparent;
-    box-shadow: 2px 2px 4px 2px black;
-    border-radius: 100%;
-    background-image: url(./img/iconacibo.png);
-    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px 2px var(--ciliegio);
+    border-radius: 30px;
+    color: var(--ciliegio);
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, var(--arancione), yellow);
     background-size: cover;
 }
 
@@ -330,7 +331,7 @@ input {
 
     /* dolci */
     .info-container3 p{ 
-        font-family:Alibaba Sans;
+        font-family: Comic Sans MS;
         font-size: 20px;
         color: var(--ciliegio);
         font-weight: bolder;
@@ -438,18 +439,19 @@ input {
 }
 
 .toggleC {
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 90px;
     display: block;
-    border: solid 2px black;
-    padding: 1em 2em;
-    border-radius: 5px;
+    text-align: center;
+    padding-top: 3px;
     cursor: pointer;
     border: solid 2px transparent;
-    box-shadow: 2px 2px 4px 2px black;
-    border-radius: 100%;
-    background-image: url(./img/iconacibo.png);
-    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px 2px var(--ciliegio);
+    border-radius: 30px;
+    color: var(--ciliegio);
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, var(--arancione), yellow);
     background-size: cover;
 }
 
@@ -481,7 +483,7 @@ input {
 
 /* vini */
 .info-container4 p{ 
-    font-family:Alibaba Sans;
+    font-family: Comic Sans MS;
     font-size: 20px;
     color: var(--ciliegio);
     font-weight: bolder;
@@ -587,18 +589,19 @@ transition: all 1s 0.7s;
 }
 
 .toggleD {
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 90px;
     display: block;
-    border: solid 2px black;
-    padding: 1em 2em;
-    border-radius: 5px;
+    text-align: center;
+    padding-top: 3px;
     cursor: pointer;
     border: solid 2px transparent;
-    box-shadow: 2px 2px 4px 2px black;
-    border-radius: 100%;
-    background-image: url(./img/iconacibo.png);
-    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px 2px var(--ciliegio);
+    border-radius: 30px;
+    color: var(--ciliegio);
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, var(--arancione), yellow);
     background-size: cover;
 }
 
@@ -636,38 +639,38 @@ transition: transform 0.5s, opacity 0.5s;
     margin-left: 0 !important;
 }
     section h1{
-        font-family: Real Stone;
+        font-family: Lobster Two;
         font-size: 30px;
         color: var(--arancione);
         text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
     }
     h2{
-        font-family: Real Stone;
+        font-family:Lobster Two;
         font-size: 30px;
         color: var(--rosa_antico);
         text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
     }
     .info-container p{ 
-        font-family:Alibaba Sans;
+        font-family:Comic Sans MS;
         font-size: 20px;
         font-weight: bolder;
         color: var(--ciliegio);
 }
 
 .info-container2 p{ 
-    font-family:Alibaba Sans;
+    font-family:Comic Sand MS;
     font-size: 20px;
     font-weight: bolder;
     color: var(--ciliegio);
 }
 .info-container3 p{ 
-    font-family:Alibaba Sans;
+    font-family:Comic Sans MS;
     font-size: 20px;
     font-weight: bolder;
     color: var(--ciliegio);
 }
 .info-container4 p{ 
-    font-family:Alibaba Sans;
+    font-family:Comic Sans MS;
     font-size: 20px;
     font-weight: bolder;
     color: var(--ciliegio);
@@ -731,38 +734,40 @@ transition: transform 0.5s, opacity 0.5s;
     margin-left: 0 !important;
 }
     section h1{
-        font-family: Real Stone;
-        font-size: 15px;
+        font-family: Lobster Two;
+        font-size: 23px;
         color: var(--arancione);
         text-shadow: 3px 3px 5px var(--rosa_antico) , 2px 2px 2px var(--ciliegio);
     }
     h2{
-        font-family: Real Stone;
-        font-size: 15px;
+        font-family: Lobster Two;
+        font-size: 17px;
         color: var(--rosa_antico);
         text-shadow: 2px 2px 3px var(--arancione),  2px 2px 2px var(--ciliegio);
     }
+
+
     .info-container p{ 
-        font-family:Alibaba Sans;
+        font-family:Comic Sans SM;
         font-size: 10px;
         font-weight: bolder;
         color: var(--ciliegio);
 }
 
 .info-container2 p{ 
-    font-family:Alibaba Sans;
-    font-size: 10px;
+    font-family:Comic Sans MS;
+    font-size: 8px;
     font-weight: bolder;
     color: var(--ciliegio);
 }
 .info-container3 p{ 
-    font-family:Alibaba Sans;
+    font-family: Comic Sans MS;
     font-size: 10px;
     font-weight: bolder;
     color: var(--ciliegio);
 }
 .info-container4 p{ 
-    font-family:Alibaba Sans;
+    font-family: Comic Sans MS;
     font-size: 10px;
     font-weight: bolder;
     color: var(--ciliegio);
@@ -773,7 +778,7 @@ transition: transform 0.5s, opacity 0.5s;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
-    width: 95vw;
+    width: 96vw;
     min-height: 15%;
     position: absolute;
     top: 0;
@@ -785,7 +790,7 @@ transition: transform 0.5s, opacity 0.5s;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
-    width: 95vw;
+    width: 96vw;
     min-height: 15%;
     position: absolute;
     top: 0;
@@ -797,7 +802,7 @@ transition: transform 0.5s, opacity 0.5s;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
-    width: 95vw;
+    width: 96vw;
     min-height: 15%;
     position: absolute;
     top: 0;
@@ -808,7 +813,7 @@ transition: transform 0.5s, opacity 0.5s;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
-    width: 95vw;
+    width: 96vw;
     min-height: 15%;
     position: absolute;
     top: 0;
@@ -816,7 +821,6 @@ transition: transform 0.5s, opacity 0.5s;
     box-shadow: 4px 4px 5px 4px rgba(0, 0, 0,0.3);    
 }
 
-    
 }
 
   
