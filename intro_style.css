@@ -17,6 +17,14 @@ font-weight: bold;
 list-style-type: none;
 }
 
+.numeri{
+  font-family: Comic Sans MS;
+  font-size: 20px;
+  color: var(--ciliegio);
+  font-weight: bold;
+  list-style-type: none;
+  }
+
 .visual{
 color: var(--ciliegio);
 font-weight: bold;
